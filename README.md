@@ -19,9 +19,9 @@ PATH = C:\Program Files\Java\jdk1.8.0_181\bin
 
 **Download your favorit IDE (for this tutorial i will use intellij)**
 
-```
+
 (https://www.jetbrains.com/idea/)
-```
+
 
 
 **Selenium Browser drivers**
