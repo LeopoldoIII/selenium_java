@@ -14,7 +14,7 @@ public class script {
 
         //Variables
 
-        String baseURL = "http://newtours.demoaut.com/";
+        String baseURL = "http://live.guru99.com/index.php/";
         String actualResult;
         String expectedReuslt = "Welcome: Mercury TourS";
 
