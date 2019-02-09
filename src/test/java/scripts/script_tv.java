@@ -18,7 +18,7 @@ public class script_tv {
         String baseURL = "http://live.guru99.com/index.php/";
         String actualResult;
         String expectedReuslt = "$615.00";
-        String chromePath = System.getProperty("user.dir" + "\\driver\\chromedriver.exe");
+        String chromePath = System.getProperty("user.dir") + "\\driver\\chromedriver.exe";
 
         //Driver Path
 
@@ -33,9 +33,19 @@ public class script_tv {
         driver.findElement(By.linkText("TV")).click();
 
 
+        driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[2]/ul/li[1]/div/div[3]/button/span/span")).click();
 
+        actualResult = driver.findElement(By.cssSelector("#shopping-cart-table>tbody>tr>td.product-cart-total>span>span")).getText();
 
+        if(actualResult.contentEquals(expectedReuslt)){
+            System.out.println();
+            System.out.println("OK El resultado actual es: " + actualResult + " igual a " + expectedReuslt);
+        }else {
+            System.out.println();
+            System.out.println("NOK el resultado actual es" + actualResult + "  igual a " + expectedReuslt);
+        }
 
+        driver.close();
 
     }
 }

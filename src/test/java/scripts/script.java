@@ -16,7 +16,7 @@ public class script {
 
         String baseURL = "http://live.guru99.com/index.php/";
         String actualResult;
-        String expectedReuslt = "Welcome: Mercury TourS";
+        String expectedReuslt = "Welcome: Mercury Tour";
 
         //Driver Path
 
