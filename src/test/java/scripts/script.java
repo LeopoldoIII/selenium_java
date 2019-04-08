@@ -17,10 +17,11 @@ public class script {
         String baseURL = "http://live.guru99.com/index.php/";
         String actualResult;
         String expectedReuslt = "Welcome: Mercury Tour";
+        String macOS72 = "chromedrivermacOS72";
 
         //Driver Path
 
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/" + macOS72);
 
 
         //Test
