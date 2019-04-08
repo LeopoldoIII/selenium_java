@@ -18,11 +18,12 @@ public class script_tv {
         String baseURL = "http://live.guru99.com/index.php/";
         String actualResult;
         String expectedReuslt = "$615.00";
-        String chromePath = System.getProperty("user.dir") + "\\driver\\chromedriver.exe";
+        String chromePathmacOS72 = System.getProperty("user.dir") + "/driver/chromedrivermacOS72";
+
 
         //Driver Path
 
-        System.setProperty("webdriver.chrome.driver", chromePath);
+        System.setProperty("webdriver.chrome.driver", chromePathmacOS72);
         driver = new ChromeDriver();
         driver.get(baseURL);
         driver.manage().window().maximize();
@@ -46,6 +47,10 @@ public class script_tv {
         }
 
         driver.close();
+
+
+
+
 
     }
 }
