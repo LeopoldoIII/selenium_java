@@ -5,8 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import tool.Jscript;
 
 public class script_tv_element {
+
+    Jscript jscript = new Jscript();
 
     @Test
     public void Chorme(){
@@ -29,7 +32,7 @@ public class script_tv_element {
         driver.get(baseURL);
         driver.manage().window().maximize();
 
-
+        
         //Interaction
 
         WebElement  tv = driver.findElement(By.linkText("TV"));
