@@ -20,9 +20,10 @@ public class Jscript {
                 Thread.sleep(1000);
                 js.executeScript("arguments[0].setAttribute('style', 'background')", element);
 
+
             } catch (Exception e) {
 
-                System.err.println("JavaScript | Method; highLigth | Exception desc: " + e.getMessage());
+                System.err.println("JavaScriptERROR | Method; highLigth | Exception desc: " + e.getMessage());
                 return false;
             }
 

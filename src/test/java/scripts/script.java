@@ -6,6 +6,8 @@ import org.testng.annotations.Test;
 
 public class script {
 
+    // Verificación Basica
+
     @Test
     public void Chorme(){
         //webdriver object driver
@@ -14,32 +16,24 @@ public class script {
 
         //Variables
 
-        String baseURL = "http://live.guru99.com/index.php/";
+        String baseURL = "http://newtours.demoaut.com/";
         String actualResult;
-        String expectedReuslt = "Welcome: Mercury Tour";
+        String expectedReuslt = "Welcome: Mercury Tours";
         String macOS72 = "chromedrivermacOS72";
+        String chromeWin = "chromedriver.exe";
 
-        //Driver Path
-
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/" + macOS72);
-
-
-        //Test
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/" + chromeWin);
 
         driver = new ChromeDriver();
 
-
-        //Interation
         driver.get(baseURL);
 
         actualResult = driver.getTitle();
 
-        System.out.println();
+        System.out.println("###TEST###");
         System.out.println(actualResult.contentEquals(expectedReuslt)?"Prueba pasada! " + actualResult : "Prueba Fallada " + actualResult);
 
         driver.close();
-
-
 
     }
 }

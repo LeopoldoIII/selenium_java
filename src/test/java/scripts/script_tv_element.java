@@ -16,41 +16,35 @@ public class script_tv_element {
         //webdriver object driver
 
         WebDriver driver;
+        Jscript jscript = new Jscript();
 
         //Variables
 
         String baseURL = "http://live.guru99.com/index.php/";
         String actualResult;
         String expectedReuslt = "$615.00";
-        String chromePathmacOS72 = System.getProperty("user.dir") + "/driver/chromedrivermacOS72";
+        String chromeMacOS72 = "";
+        String chromeWin = "chromedriver.exe";
 
 
         //Driver Path
 
-        System.setProperty("webdriver.chrome.driver", chromePathmacOS72);
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/" + chromeWin);
+
         driver = new ChromeDriver();
         driver.get(baseURL);
         driver.manage().window().maximize();
 
-        
+
         //Interaction
 
-        WebElement  tv = driver.findElement(By.linkText("TV"));
-        tv.click();
-        WebElement elemento = driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[2]/ul/li[1]/div/div[3]/button/span/span"));
-        elemento.click();
-        WebElement shopinCard = driver.findElement(By.cssSelector("#shopping-cart-table>tbody>tr>td.product-cart-total>span>span"));
-        actualResult =  shopinCard.getText();
+        WebElement  lnktv = driver.findElement(By.linkText("TV"));
+        jscript.highLigth(lnktv);
+        lnktv.click();
+        WebElement btnAddToCart = driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[2]/ul/li[1]/div/div[3]/button/span/span"));
+        btnAddToCart.click();
 
-        if(actualResult.contentEquals(expectedReuslt)){
-            System.out.println();
-            System.out.println("OK El resultado actual es: " + actualResult + " igual a " + expectedReuslt);
-        }else {
-            System.out.println();
-            System.out.println("NOK el resultado actual es" + actualResult + "  igual a " + expectedReuslt);
-        }
 
-        driver.close();
 
     }
 }
