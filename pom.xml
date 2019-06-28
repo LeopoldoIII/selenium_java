@@ -112,11 +112,21 @@
             <version>5.2.0</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.gatling.highcharts/gatling-charts-highcharts -->
+        <dependency>
+            <groupId>io.gatling.highcharts</groupId>
+            <artifactId>gatling-charts-highcharts</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.gatling</groupId>
+            <artifactId>gatling-maven-plugin</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+
 
     </dependencies>
-
-
-
 
 
 </project>
