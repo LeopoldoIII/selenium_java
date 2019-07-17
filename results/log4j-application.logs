@@ -1,0 +1,11 @@
+2019-07-16 20:29:52 INFO  LogsTest:38 - Opening webdite: https://healthunify.com/bmicalculator/
+2019-07-16 20:29:52 INFO  LogsTest:55 - Entering weinght
+2019-07-16 20:29:53 INFO  LogsTest:57 - Selecting kilograms
+2019-07-16 20:29:53 INFO  LogsTest:59 - Selecting height in feet
+2019-07-16 20:29:53 INFO  LogsTest:61 - Selecting height in inichs
+2019-07-16 20:29:53 INFO  LogsTest:63 - Clicking on Calculate
+2019-07-16 20:29:53 INFO  LogsTest:71 - Si unit = 27.46
+2019-07-16 20:29:53 INFO  LogsTest:72 - US unit = 27.92
+2019-07-16 20:29:53 INFO  LogsTest:73 - UK unit = 174.37
+2019-07-16 20:29:53 INFO  LogsTest:74 - Description Your category is Overweight
+2019-07-16 20:29:53 INFO  LogsTest:49 - Broser Closed!
