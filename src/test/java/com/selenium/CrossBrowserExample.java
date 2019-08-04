@@ -21,7 +21,8 @@ public class CrossBrowserExample {
 
     private void setProperties(String prop, String driverName) {
 
-        System.setProperty("webdriver." + prop + ".driver", System.getProperty("user.dri") + "//drivers" + driverName);
+        System.setProperty("webdriver." + prop + ".driver", System.getProperty("user.dir") + "/driver/" + driverName);
+
 
 
     }
@@ -32,7 +33,7 @@ public class CrossBrowserExample {
         switch (browser.toLowerCase()) {
 
             case "chrome":
-                setProperties("chrome", "chromedriver");
+                setProperties("chrome", "chromedrivermacos");
                 driver = new ChromeDriver();
                 break;
             case "firefox":
@@ -40,7 +41,7 @@ public class CrossBrowserExample {
                 driver = new FirefoxDriver();
                 break;
                 default:
-                    throw  new Exception("Incorrect Browser")
+                    throw  new Exception("Incorrect Browser");
         }
 
         driver.manage().window().maximize();

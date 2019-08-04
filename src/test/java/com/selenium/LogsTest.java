@@ -31,7 +31,7 @@ public class LogsTest {
 
         try {
 
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/chromedrivermacOS72");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/chromedrivermacos72");
             driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.get(baseURL);
